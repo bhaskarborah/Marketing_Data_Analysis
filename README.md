@@ -35,8 +35,9 @@ Market segmentation allows you to target your content to the right people in the
 
 The file is located at https://www.kaggle.com/jackdaoud/marketing-data?select=marketing_data.csv and contains 28 columns of data which are:
 
-| ID                  | Unique Customer ID                                           |
+| Category            | Description                                                  |
 | ------------------- | ------------------------------------------------------------ |
+| ID                  | Unique Customer ID                                           |
 | Year_Birth          | Customer’s Year of Birth                                     |
 | Education           | Customer’s Level of Education                                |
 | Marital_Status      | Customer’s Marital Status                                    |
