@@ -6,6 +6,6 @@ The "marketing_data" dataset contains 2240 rows and 28 columns. After loading an
 - saving the DataFrame to a SQL table using the database engine
 - confirming that the table imported correctly in the Postgres databse by running the query 'select count(*) from table_name'
 
-Below is a screenshot of the databse after being saved to the Postgres database:
+Below is a screenshot of the data table after being saved to the Postgres database:
 
 ![mockup database](https://github.com/bhaskarborah/Marketing_Data_Analysis/blob/nhi/postgres_mockup_database.png)
