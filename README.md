@@ -2,7 +2,7 @@
 
 ## Overview of Project
 
-XYZ is a company which has an extensive marking data set. However it has been noted by the Chief Marketing Officer that the recent campaigns of the company have not been as successful as they should be.
+XYZ is a company which has an extensive marketing data set. However it has been noted by the Chief Marketing Officer that the recent campaigns of the company have not been as successful as they should be.
 The primary objective of this project is analyze the dataset, understand the problem and propose a data-driven solution to eradicate the problem.
 
 ## Purpose
