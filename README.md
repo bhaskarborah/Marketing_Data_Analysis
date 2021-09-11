@@ -31,10 +31,10 @@ Provide a data driven solution to fulfill the below objectives and provide a sum
 
 The dataset consists of 2,240 customers of XYZ company with data on:
 
-Customer profiles
-Product preferences
-Campaign successes/failures
-Channel performance
+- Customer profiles
+- Product preferences
+- Campaign successes/failures
+- Channel performance
 
 The source of the dataset is:
 https://www.kaggle.com/jackdaoud/marketing-data?select=marketing_data.csv
