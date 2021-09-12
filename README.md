@@ -122,6 +122,71 @@ The income field has 24 null values. These values might be significant in creati
 
 ![Screen Shot 2021-09-11 at 1.14.01 PM](https://i.imgur.com/KhYpxju.png)
 
+This section would be added as we continue with the EDA process.
+
+## Create SQL database
+The "marketing_data" dataset contains 2240 rows and 28 columns. After loading and transforming the dataset, we save the clean dataframe in a Postgres database for future use. The process of loading this dataset to the Postgres database includes:
+- Creating a connection string for the database engine to connect to the database
+- Creating a database engine
+- Saving the DataFrame to a SQL table using the database engine
+- Confirming that the table imported correctly in the Postgres database by running the query 'select count(*) from table_name'
+- Loading data from Postgres table into a panda dataframe to check the communication between Pandas and SQL server.
+
+Below is a screenshot of the data table after being saved to the Postgres database:
+
+![Screen Shot 2021-09-12 at 1.44.18 PM](https://i.imgur.com/v35zfLG.png)
+
+The SQL statement used to create the table is as below:
+
+    CREATE TABLE marketing_data (
+    ID                      int,
+    Year_Birth              int,
+    Education              VARCHAR(100),
+    Marital_Status         VARCHAR(100),
+    Income                VARCHAR(100),
+    Kidhome                 int,
+    Teenhome                int,
+    Dt_Customer            date,
+    Recency                 int,
+    MntWines                int,
+    MntFruits               int,
+    MntMeatProducts         int,
+    MntFishProducts         int,
+    MntSweetProducts        int,
+    MntGoldProds            int,
+    NumDealsPurchases       int,
+    NumWebPurchases         int,
+    NumCatalogPurchases     int,
+    NumStorePurchases       int,
+    NumWebVisitsMonth       int,
+    AcceptedCmp3            int,
+    AcceptedCmp4            int,
+    AcceptedCmp5            int,
+    AcceptedCmp1            int,
+    AcceptedCmp2            int,
+    Response                int,
+    Complain                int,
+    Country                VARCHAR(40),
+    PRIMARY KEY (id)
+    );
+
+
+## Machine Learning
+#### To train a predictive model which allows the company to maximize the profit of the next marketing campaign
+- Define the features and target. Split the data into training set and test set. 
+- Run predictive models such as multiple regression to determine the factors for the next campaigns success.
+#### Summary of actionable findings to improve advertising campaign success
+- Perform EDA(exploratory data analysis) to determine the various factors for the campaign’s success.
+- Which products are performing best.
+- Which channels are under performing.
+- Predict whether or not a customer will respond to the next campaign.
+- Based on the data,  predict if a customer will respond to the next campaign or not.
+#### Classify customers into clusters based on their buying behaviors and demographic information
+- Run a classification algorithm such as k-means to divide the consumers into different clusters based on their buying behaviour and demographic information. This could help in target marketing of a particular product to that particular cluster of consumers.
+
+This section would be updated as we continue to work on the project.
+
+
 
 
 
