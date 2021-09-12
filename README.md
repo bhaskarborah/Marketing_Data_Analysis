@@ -1,11 +1,17 @@
 #   Marketing Data - Analysis
 
+UC Berkley Data Visualization Final Project (**Team:** Nhi Nguyen, Vijaya Ayanampudi, Bhaskar Borah, and Scott MacDonald)
+
 ## Overview of Project
 
 XYZ is a company which has an extensive marketing data set. However it has been noted by the Chief Marketing Officer that the recent campaigns of the company have not been as successful as they should be.
 The primary objective of this project is analyze the dataset, understand the problem and propose a data-driven solution to eradicate the problem.
 
 ## Purpose
+
+"In marketing, market segmentation is the process of dividing a broad consumer or business market, normally consisting of existing and potential customers, into sub-groups of consumers (known as segments) based on some type of shared characteristics."
+
+[^1]: Wikipedia contributors. (2021, June 23). Market segmentation. In *Wikipedia, The Free Encyclopedia*. Retrieved 14:25, September 11, 2021, from https://en.wikipedia.org/w/index.php?title=Market_segmentation&oldid=1029982660
 
 Data Segmentation is the process of taking the data you hold and dividing it up and grouping similar data together based on the chosen parameters so that you can use it more efficiently within marketing and operations.
 
@@ -16,20 +22,35 @@ The key benefits of Data Segmentation are:
 3. Enables us to mass-personalize our marketing communications, reducing costs.
 4. Allows us to create a predictive model based on the segmented data for better accuracy in the predictions.
 
-The purpose of the project is defined in the below points:
-1. The main objective of this project is to segment the data and train a predictive model which allows the company to maximize the profit of the next marketing campaign.
-2. Which marketing campaign is most successful?
-3. What does the average customer look like for this company?
-4. Which products are performing best?
-5. Which channels are under performing?
 
-Provide a data driven solution to fulfill the below objectives and provide a summary of actionable findings to improve advertising campaign success
-1. Predict whether or not a customer will respond to the next campaign
-2. Classify customers into clusters based on their buying behaviors and demographic info
+*Questions the team hopes   to answer with the data*
+
+#### Our team hopes to answer the following questions with the data:
+
+- Which marketing campaign is most successful?
+- What does the average customer look like for this company?
+- Which products are performing best?
+- Which channels are underperforming?
+
+#### Creating a summary of actionable findings to improve advertising campaign success:
+
+- To segment the data and train a predictive model which allows the company to maximize the profit of the next marketing campaign
+- Predict whether or not a customer will respond to the next campaign
+- Classify customers into clusters based on their buying behaviors and demographic info
+
+##  Reason the topic was selected
+
+#### In a very competitive marketplace, companies must optimize their potential addressable market (PAM). Using market segmentation, the benifits are less wasted resources (time and money). It allows the company to target specific potential customers that would most likely turn into actual customers by learning their needs and wants and fulfilling them.
+
+"Market segmentation can help you to define and better understand your target audiences and ideal customers. If you’re a marketer, this allows you to [identify the right market for your products](https://www.lotame.com/finding-target-audience/) and then target your marketing more effectively. Similarly, publishers can use market segmentation to offer more precisely targeted advertising options and to customize their content for different audience groups."
+
+"Market segmentation allows you to target your content to the right people in the right way, rather than targeting your entire audience with a generic message. This helps you increase the chances of people engaging with your ad or content, resulting in more efficient campaigns and improved return on investment (ROI)."
+
+[^2]: *What is market Segmentation? 4 types & 5 benefits*. Lotame. (2021, March 4). Retrieved September 11, 2021, from https://www.lotame.com/what-is-market-segmentation/.2 
 
 ## Dataset
 
-The dataset consists of 2,240 customers of XYZ company with data on:
+The data set chosen was compiled by Dr. Omar Romero-Hernandez and comprises data of 2,240 customers of XYZ company containing
 
 - Customer profiles
 - Product preferences
@@ -39,7 +60,7 @@ The dataset consists of 2,240 customers of XYZ company with data on:
 The source of the dataset is:
 https://www.kaggle.com/jackdaoud/marketing-data?select=marketing_data.csv
 
-The column description of the dataset is as below:
+The dataset contains 28 columns of data which are
 
 | Column Name            | Column Description                                                  |
 | ------------------- | ------------------------------------------------------------ |
