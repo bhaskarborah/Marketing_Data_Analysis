@@ -1,6 +1,6 @@
 #   Marketing Data - Analysis
 
-UC Berkley Data Visualization Final Project (**Team:** Nhi Nguyen, Vijaya Ayanampudi, Bhaskar Borah, and Scott MacDonald)
+UC Berkeley Data Visualization Final Project (**Team:** Nhi Nguyen, Vijaya Ayanampudi, Bhaskar Borah, and Scott MacDonald)
 
 ## Overview of Project
 
