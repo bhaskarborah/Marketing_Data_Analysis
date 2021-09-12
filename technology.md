@@ -10,3 +10,7 @@ SciKitLearn is the ML library we'll be using to create a classifier and predicti
 
 ## Dashboard
 The results of our findings will be visualized in Tableau Public.
+
+
+
+** The current plan is included but note, the Technologies Used markdown will be updated throughout project as necessary.
