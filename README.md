@@ -2,6 +2,8 @@
 
 UC Berkeley Data Visualization Final Project (**Team:** Nhi Nguyen, Vijaya Ayanampudi, Bhaskar Borah, and Scott MacDonald)
 
+Presentation Link: https://docs.google.com/presentation/d/1rXGLG-qk14EAdRtTDJJWhMR-93qbQhRi88W2aqQen0k/edit#slide=id.p
+
 ## Overview of Project
 
 XYZ is a company which has an extensive marketing data set. However it has been noted by the Chief Marketing Officer that the recent campaigns of the company have not been as successful as they should be.
