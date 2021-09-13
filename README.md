@@ -136,40 +136,57 @@ Below is a screenshot of the data table after being saved to the Postgres databa
 
 ![Screen Shot 2021-09-12 at 1.44.18 PM](https://i.imgur.com/v35zfLG.png)
 
-The SQL statement used to create the table is as below:
 
-    CREATE TABLE marketing_data (
-    ID                      int,
-    Year_Birth              int,
-    Education              VARCHAR(100),
-    Marital_Status         VARCHAR(100),
-    Income                VARCHAR(100),
-    Kidhome                 int,
-    Teenhome                int,
-    Dt_Customer            date,
-    Recency                 int,
-    MntWines                int,
-    MntFruits               int,
-    MntMeatProducts         int,
-    MntFishProducts         int,
-    MntSweetProducts        int,
-    MntGoldProds            int,
-    NumDealsPurchases       int,
-    NumWebPurchases         int,
-    NumCatalogPurchases     int,
-    NumStorePurchases       int,
-    NumWebVisitsMonth       int,
-    AcceptedCmp3            int,
-    AcceptedCmp4            int,
-    AcceptedCmp5            int,
-    AcceptedCmp1            int,
-    AcceptedCmp2            int,
-    Response                int,
-    Complain                int,
-    Country                VARCHAR(40),
-    PRIMARY KEY (id)
-    );
+## Create an RDS instance in AWS
+For this project, we will create a PostgresSQL database hosted on the cloud of AWS so that every member of the team has access to the same datasets. We first create an RDS instance on AWS, then a PostgresSQL database. After we are all set up on AWS, we connect pgAdmin to the RDS instance we just created.
 
+## pgAdmin Schema
+- After creating a pgAdmin server that is connect to our RDS instance, we test the connection by creating a table and load the 'marketing_data.csv' into that table. We run the following query in pgAdmin query tool:
+        CREATE TABLE marketing_data (
+        ID                      int,
+        Year_Birth              int,
+        Education              VARCHAR(100),
+        Marital_Status         VARCHAR(100),
+        Income                VARCHAR(100),
+        Kidhome                 int,
+        Teenhome                int,
+        Dt_Customer            date,
+        Recency                 int,
+        MntWines                int,
+        MntFruits               int,
+        MntMeatProducts         int,
+        MntFishProducts         int,
+        MntSweetProducts        int,
+        MntGoldProds            int,
+        NumDealsPurchases       int,
+        NumWebPurchases         int,
+        NumCatalogPurchases     int,
+        NumStorePurchases       int,
+        NumWebVisitsMonth       int,
+        AcceptedCmp3            int,
+        AcceptedCmp4            int,
+        AcceptedCmp5            int,
+        AcceptedCmp1            int,
+        AcceptedCmp2            int,
+        Response                int,
+        Complain                int,
+        Country                VARCHAR(40),
+        PRIMARY KEY (id)
+        );
+
+          
+- Next, we import the 'marketing_data.csv' into the 'marketing_data' table. Below is a screenshot of the table after the data has been imported:
+
+![marketing_data_table_pgAdmin](https://i.imgur.com/79SxYBA.png)
+
+## Reading from a PostgreSQL table to a pandas DataFrame
+- After loading the dataset into our postgres table, we create a pandas dataframe from the 'marketing_data' table in pgAdmin. We follow the below steps: 
+  - creating a connection string for the database engine to connect to the database
+  - creating a database engine
+  - loading data from Postgres table into a panda dataframe to check the communication between Pandas and SQL server.
+- Below is a screenshot of the Pandas dataframe:
+
+![marketing_df_pd](https://i.imgur.com/f4gzrfv.png)
 
 ## Machine Learning
 #### To train a predictive model which allows the company to maximize the profit of the next marketing campaign
