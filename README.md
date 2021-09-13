@@ -7,7 +7,7 @@ Cnnect to the RDS database instance in the AWS and import the data into the mach
 ![image](https://github.com/bhaskarborah/Marketing_Data_Analysis/blob/vijaya/Resources/acessdata.png)
 
 #### Initial EDA
-To see if overall spending has a linear realtionship to the income. From the figure below for linear regression model the overall spending and income seem to have a linear relation.
+To see if overall spending has a linear relationship to the income of the household. From the figure below for linear regression model the overall spending and income seem to have a linear relation.
 ![image](https://github.com/bhaskarborah/Marketing_Data_Analysis/blob/vijaya/Resources/LinearRegression.png)
 
 ### Future Analysis
