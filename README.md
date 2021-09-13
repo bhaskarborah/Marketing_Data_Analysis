@@ -1,6 +1,8 @@
 #   Marketing Data - Analysis
 
-UC Berkley Data Visualization Final Project (**Team:** Nhi Nguyen, Vijaya Ayanampudi, Bhaskar Borah, and Scott MacDonald)
+UC Berkeley Data Visualization Final Project (**Team:** Nhi Nguyen, Vijaya Ayanampudi, Bhaskar Borah, and Scott MacDonald)
+
+Presentation Link: https://docs.google.com/presentation/d/1rXGLG-qk14EAdRtTDJJWhMR-93qbQhRi88W2aqQen0k/edit#slide=id.p
 
 ## Overview of Project
 
@@ -42,11 +44,27 @@ The key benefits of Data Segmentation are:
 
 #### In a very competitive marketplace, companies must optimize their potential addressable market (PAM). Using market segmentation, the benifits are less wasted resources (time and money). It allows the company to target specific potential customers that would most likely turn into actual customers by learning their needs and wants and fulfilling them.
 
-"Market segmentation can help you to define and better understand your target audiences and ideal customers. If you’re a marketer, this allows you to [identify the right market for your products](https://www.lotame.com/finding-target-audience/) and then target your marketing more effectively. Similarly, publishers can use market segmentation to offer more precisely targeted advertising options and to customize their content for different audience groups."
+"Market segmentation can help you to define and better understand your target audiences and ideal customers. If you’re a marketer, this allows you to [identify the right market for your products](https://www.lotame.com/what-is-market-segmentation/) and then target your marketing more effectively. Similarly, publishers can use market segmentation to offer more precisely targeted advertising options and to customize their content for different audience groups."
 
 "Market segmentation allows you to target your content to the right people in the right way, rather than targeting your entire audience with a generic message. This helps you increase the chances of people engaging with your ad or content, resulting in more efficient campaigns and improved return on investment (ROI)."
 
 [^2]: *What is market Segmentation? 4 types & 5 benefits*. Lotame. (2021, March 4). Retrieved September 11, 2021, from https://www.lotame.com/what-is-market-segmentation/.2 
+
+## Communication Protocol
+
+The team communicated using the below means:
+
+1. A slack channel with the team members has been created where in dataset inputs, EDA suggestions, requirements, details of tasks, action items, code changes, database design etc have been discussed.
+
+2. The team has conducted regular Google meetings to have discussion regarding the progress, requirements and action items of the project.
+
+3. The team has created the below shared directories:
+    a. Project Proposals: This link contains the details of the different projects which were considered before deciding on the final one:
+    https://docs.google.com/document/d/16pDAf1SeCoWQPkK0wDG6KGJ4e4V19rvHeGtaWDH8FyQ/edit
+
+    b. Shared link to keep track of the required weekly tasks:
+    https://docs.google.com/spreadsheets/d/1OOgxBpnZuxi2hHGLxY3LQY5d_HRnzQuFLUDgBpnIdvs/edit#gid=0
+
 
 ## Dataset
 
@@ -136,53 +154,93 @@ Below is a screenshot of the data table after being saved to the Postgres databa
 
 ![Screen Shot 2021-09-12 at 1.44.18 PM](https://i.imgur.com/v35zfLG.png)
 
-The SQL statement used to create the table is as below:
 
-    CREATE TABLE marketing_data (
-    ID                      int,
-    Year_Birth              int,
-    Education              VARCHAR(100),
-    Marital_Status         VARCHAR(100),
-    Income                VARCHAR(100),
-    Kidhome                 int,
-    Teenhome                int,
-    Dt_Customer            date,
-    Recency                 int,
-    MntWines                int,
-    MntFruits               int,
-    MntMeatProducts         int,
-    MntFishProducts         int,
-    MntSweetProducts        int,
-    MntGoldProds            int,
-    NumDealsPurchases       int,
-    NumWebPurchases         int,
-    NumCatalogPurchases     int,
-    NumStorePurchases       int,
-    NumWebVisitsMonth       int,
-    AcceptedCmp3            int,
-    AcceptedCmp4            int,
-    AcceptedCmp5            int,
-    AcceptedCmp1            int,
-    AcceptedCmp2            int,
-    Response                int,
-    Complain                int,
-    Country                VARCHAR(40),
-    PRIMARY KEY (id)
-    );
+## Create an RDS instance in AWS
+For this project, we will create a PostgresSQL database hosted on the cloud of AWS so that every member of the team has access to the same datasets. We first create an RDS instance on AWS, then a PostgresSQL database. After we are all set up on AWS, we connect pgAdmin to the RDS instance we just created.
 
+## pgAdmin Schema
+- After creating a pgAdmin server that is connect to our RDS instance, we test the connection by creating a table and load the 'marketing_data.csv' into that table. We run the following query in pgAdmin query tool:
+
+        CREATE TABLE marketing_data (
+        ID                      int,
+        Year_Birth              int,
+        Education              VARCHAR(100),
+        Marital_Status         VARCHAR(100),
+        Income                VARCHAR(100),
+        Kidhome                 int,
+        Teenhome                int,
+        Dt_Customer            date,
+        Recency                 int,
+        MntWines                int,
+        MntFruits               int,
+        MntMeatProducts         int,
+        MntFishProducts         int,
+        MntSweetProducts        int,
+        MntGoldProds            int,
+        NumDealsPurchases       int,
+        NumWebPurchases         int,
+        NumCatalogPurchases     int,
+        NumStorePurchases       int,
+        NumWebVisitsMonth       int,
+        AcceptedCmp3            int,
+        AcceptedCmp4            int,
+        AcceptedCmp5            int,
+        AcceptedCmp1            int,
+        AcceptedCmp2            int,
+        Response                int,
+        Complain                int,
+        Country                VARCHAR(40),
+        PRIMARY KEY (id)
+        );
+
+          
+- Next, we import the 'marketing_data.csv' into the 'marketing_data' table. Below is a screenshot of the table after the data has been imported:
+
+![marketing_data_table_pgAdmin](https://i.imgur.com/79SxYBA.png)
+
+## Reading from a PostgreSQL table to a pandas DataFrame
+- After loading the dataset into our postgres table, we create a pandas dataframe from the 'marketing_data' table in pgAdmin. We follow the below steps: 
+  - creating a connection string for the database engine to connect to the database
+  - creating a database engine
+  - loading data from Postgres table into a panda dataframe to check the communication between Pandas and SQL server.
+- Below is a screenshot of the Pandas dataframe:
+
+![marketing_df_pd](https://i.imgur.com/f4gzrfv.png)
 
 ## Machine Learning
+
+#### Connect to the provisional database
+
+
+
+![createserver](https://i.imgur.com/r39Axrw.png)
+
+![create_connectiontoaws](https://i.imgur.com/Y0vYU2E.png)
+
+
+
+
+![acessdata](https://i.imgur.com/3BRQJfL.png)
+
+#### Initial EDA
+To see if overall spending has a linear relationship to the income of the household. From the figure below for linear regression model the overall spending and income seem to have a linear relation.
+
+![LinearRegression](https://i.imgur.com/0XhOavM.png)
+
+
+### Future Analysis
+
 #### To train a predictive model which allows the company to maximize the profit of the next marketing campaign
 - Define the features and target. Split the data into training set and test set. 
 - Run predictive models such as multiple regression to determine the factors for the next campaigns success.
 #### Summary of actionable findings to improve advertising campaign success
 - Perform EDA(exploratory data analysis) to determine the various factors for the campaign’s success.
 - Which products are performing best.
-- Which channels are under performing.
+- Which channels are underperforming.
 - Predict whether or not a customer will respond to the next campaign.
 - Based on the data,  predict if a customer will respond to the next campaign or not.
 #### Classify customers into clusters based on their buying behaviors and demographic information
-- Run a classification algorithm such as k-means to divide the consumers into different clusters based on their buying behaviour and demographic information. This could help in target marketing of a particular product to that particular cluster of consumers.
+- Run a classification algorithm such as k-means to divide the consumers into different clusters based on their buying behaviours and demographic information. This could help in target marketing of a particular product to that particular cluster of consumers.
 
 This section would be updated as we continue to work on the project.
 
