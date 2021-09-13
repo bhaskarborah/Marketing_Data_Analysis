@@ -126,19 +126,6 @@ The income field has 24 null values. These values might be significant in creati
 
 This section would be added as we continue with the EDA process.
 
-## Create SQL database
-The "marketing_data" dataset contains 2240 rows and 28 columns. After loading and transforming the dataset, we save the clean dataframe in a Postgres database for future use. The process of loading this dataset to the Postgres database includes:
-- Creating a connection string for the database engine to connect to the database
-- Creating a database engine
-- Saving the DataFrame to a SQL table using the database engine
-- Confirming that the table imported correctly in the Postgres database by running the query 'select count(*) from table_name'
-- Loading data from Postgres table into a panda dataframe to check the communication between Pandas and SQL server.
-
-Below is a screenshot of the data table after being saved to the Postgres database:
-
-![Screen Shot 2021-09-12 at 1.44.18 PM](https://i.imgur.com/v35zfLG.png)
-
-
 ## Create an RDS instance in AWS
 For this project, we will create a PostgresSQL database hosted on the cloud of AWS so that every member of the team has access to the same datasets. We first create an RDS instance on AWS, then a PostgresSQL database. After we are all set up on AWS, we connect pgAdmin to the RDS instance we just created.
 
