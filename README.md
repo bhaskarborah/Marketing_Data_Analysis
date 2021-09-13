@@ -1,5 +1,17 @@
 # Marketing_Data_Analysis
 ## Machine Learning
+#### Connect to the provisional database
+Cnnect to the RDS database instance in the AWS and import the data into the machine learning program.
+![image](https://github.com/bhaskarborah/Marketing_Data_Analysis/blob/vijaya/Resources/createserver.png)
+![image](https://github.com/bhaskarborah/Marketing_Data_Analysis/blob/vijaya/Resources/create_connectiontoaws.png)
+![image](https://github.com/bhaskarborah/Marketing_Data_Analysis/blob/vijaya/Resources/acessdata.png)
+
+#### Initial EDA
+To see if overall spending has a linear realtionship to the income. From the figure below for linear regression model the overall spending and income seem to have a linear relation.
+![image](https://github.com/bhaskarborah/Marketing_Data_Analysis/blob/vijaya/Resources/LinearRegression.png)
+
+### Future Analysis
+
 #### To train a predictive model which allows the company to maximize the profit of the next marketing campaign
 - Define the features and target. Split the data into training set and test set. 
 - Run predictive models such as multiple regression to determine the factors for the next campaigns success.
