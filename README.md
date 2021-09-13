@@ -50,6 +50,22 @@ The key benefits of Data Segmentation are:
 
 [^2]: *What is market Segmentation? 4 types & 5 benefits*. Lotame. (2021, March 4). Retrieved September 11, 2021, from https://www.lotame.com/what-is-market-segmentation/.2 
 
+## Communication Protocol
+
+The team communicated using the below means:
+
+1. A slack channel with the team members has been created where in dataset inputs, EDA suggestions, requirements, details of tasks, action items, code changes, database design etc have been discussed.
+
+2. The team has conducted regular Google meetings to have discussion regarding the progress, requirements and action items of the project.
+
+3. The team has created the below shared directories:
+    a. Project Proposals: This link contains the details of the different projects which were considered before deciding on the final one:
+    https://docs.google.com/document/d/16pDAf1SeCoWQPkK0wDG6KGJ4e4V19rvHeGtaWDH8FyQ/edit
+
+    b. Shared link to keep track of the required weekly tasks:
+    https://docs.google.com/spreadsheets/d/1OOgxBpnZuxi2hHGLxY3LQY5d_HRnzQuFLUDgBpnIdvs/edit#gid=0
+
+
 ## Dataset
 
 The data set chosen was compiled by Dr. Omar Romero-Hernandez and comprises data of 2,240 customers of XYZ company containing
