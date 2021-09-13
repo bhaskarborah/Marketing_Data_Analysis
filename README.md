@@ -144,6 +144,7 @@ For this project, we will create a PostgresSQL database hosted on the cloud of A
 
 ## pgAdmin Schema
 - After creating a pgAdmin server that is connect to our RDS instance, we test the connection by creating a table and load the 'marketing_data.csv' into that table. We run the following query in pgAdmin query tool:
+
         CREATE TABLE marketing_data (
         ID                      int,
         Year_Birth              int,
