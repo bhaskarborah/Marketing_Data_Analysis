@@ -192,17 +192,39 @@ For this project, we will create a PostgresSQL database hosted on the cloud of A
 ![marketing_df_pd](https://i.imgur.com/f4gzrfv.png)
 
 ## Machine Learning
+
+#### Connect to the provisional database
+
+
+
+![createserver](https://i.imgur.com/r39Axrw.png)
+
+![create_connectiontoaws](https://i.imgur.com/Y0vYU2E.png)
+
+
+
+
+![acessdata](https://i.imgur.com/3BRQJfL.png)
+
+#### Initial EDA
+To see if overall spending has a linear relationship to the income of the household. From the figure below for linear regression model the overall spending and income seem to have a linear relation.
+
+![LinearRegression](https://i.imgur.com/0XhOavM.png)
+
+
+### Future Analysis
+
 #### To train a predictive model which allows the company to maximize the profit of the next marketing campaign
 - Define the features and target. Split the data into training set and test set. 
 - Run predictive models such as multiple regression to determine the factors for the next campaigns success.
 #### Summary of actionable findings to improve advertising campaign success
 - Perform EDA(exploratory data analysis) to determine the various factors for the campaign’s success.
 - Which products are performing best.
-- Which channels are under performing.
+- Which channels are underperforming.
 - Predict whether or not a customer will respond to the next campaign.
 - Based on the data,  predict if a customer will respond to the next campaign or not.
 #### Classify customers into clusters based on their buying behaviors and demographic information
-- Run a classification algorithm such as k-means to divide the consumers into different clusters based on their buying behaviour and demographic information. This could help in target marketing of a particular product to that particular cluster of consumers.
+- Run a classification algorithm such as k-means to divide the consumers into different clusters based on their buying behaviours and demographic information. This could help in target marketing of a particular product to that particular cluster of consumers.
 
 This section would be updated as we continue to work on the project.
 
