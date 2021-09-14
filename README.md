@@ -48,7 +48,7 @@ The key benefits of Data Segmentation are:
 
 "Market segmentation allows you to target your content to the right people in the right way, rather than targeting your entire audience with a generic message. This helps you increase the chances of people engaging with your ad or content, resulting in more efficient campaigns and improved return on investment (ROI)."
 
-[^2]: *What is market Segmentation? 4 types & 5 benefits*. Lotame. (2021, March 4). Retrieved September 11, 2021, from https://www.lotame.com/what-is-market-segmentation/.2 
+[^2]: *What is market Segmentation? 4 types & 5 benefits*. Lotame. (2021, March 4). Retrieved September 11, 2021, from https://www.lotame.com/what-is-market-segmentation/
 
 ## Communication Protocol
 
@@ -142,19 +142,6 @@ The income field has 24 null values. These values might be significant in creati
 
 This section would be added as we continue with the EDA process.
 
-## Create SQL database
-The "marketing_data" dataset contains 2240 rows and 28 columns. After loading and transforming the dataset, we save the clean dataframe in a Postgres database for future use. The process of loading this dataset to the Postgres database includes:
-- Creating a connection string for the database engine to connect to the database
-- Creating a database engine
-- Saving the DataFrame to a SQL table using the database engine
-- Confirming that the table imported correctly in the Postgres database by running the query 'select count(*) from table_name'
-- Loading data from Postgres table into a panda dataframe to check the communication between Pandas and SQL server.
-
-Below is a screenshot of the data table after being saved to the Postgres database:
-
-![Screen Shot 2021-09-12 at 1.44.18 PM](https://i.imgur.com/v35zfLG.png)
-
-
 ## Create an RDS instance in AWS
 For this project, we will create a PostgresSQL database hosted on the cloud of AWS so that every member of the team has access to the same datasets. We first create an RDS instance on AWS, then a PostgresSQL database. After we are all set up on AWS, we connect pgAdmin to the RDS instance we just created.
 
@@ -199,6 +186,7 @@ For this project, we will create a PostgresSQL database hosted on the cloud of A
 ![marketing_data_table_pgAdmin](https://i.imgur.com/79SxYBA.png)
 
 ## Reading from a PostgreSQL table to a pandas DataFrame
+- The "marketing_data" dataset contains 2240 rows and 28 columns. After loading and transforming the dataset, we save the clean dataframe in a Postgres database for future use. 
 - After loading the dataset into our postgres table, we create a pandas dataframe from the 'marketing_data' table in pgAdmin. We follow the below steps: 
   - creating a connection string for the database engine to connect to the database
   - creating a database engine
