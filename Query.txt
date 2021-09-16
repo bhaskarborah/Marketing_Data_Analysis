@@ -77,6 +77,6 @@ ALTER TABLE public.marketing_data_amounts_total
 
 -- Create demographic_data table
 CREATE TABLE demographic_data AS
-SELECT id, year_birth, education, marital_status, income, kid_home
-		teen_home, country
+SELECT id, year_birth, education, marital_status, 
+		income, kid_home, teen_home, country
 FROM marketing_data;
