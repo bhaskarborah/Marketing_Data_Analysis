@@ -91,3 +91,7 @@ For this project, we create a PostgresSQL database hosted on the cloud of AWS so
 	  INNER JOIN marketing_data_amounts_total AS mdat
 		  ON (md.id = mdat.id);
 - Then, we export the marketing_data table into a csv file for future use in data visualization and building machine learning models.  
+
+## ERD
+- Below is an ERD of our database
+![ERD](https://github.com/bhaskarborah/Marketing_Data_Analysis/blob/nhi-sg2/marketing_data_ERD.png)
