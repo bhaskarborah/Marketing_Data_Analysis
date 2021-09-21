@@ -11,11 +11,11 @@ Kid_Home int
 Teen_Home int
 Country string 
 
-Country
+Country_Data
 -
-Country string pk fk - Demographic_Data.Country
+Country string pk
 Lat float
-Long Float
+Long float
 Per_Capita_Income float
 Currency_Conv_To_USD float
 
@@ -24,8 +24,3 @@ Marketing_Data_Amounts_Total
 ID int pk fk - Demographic_Data.ID
 Mnt_Sum float
 Purchases_Sum int
-
-
-
-
-

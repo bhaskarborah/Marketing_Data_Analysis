@@ -1,12 +1,12 @@
--- Remove quotation marks from column names
-ALTER TABLE public.country_data
-    RENAME "Lat" TO lat;
-ALTER TABLE public.country_data
-    RENAME "Long" TO long;
-ALTER TABLE public.country_data
-    RENAME "Per_Capita_Income" TO per_capita_income;
-ALTER TABLE public.country_data
-    RENAME "Currency_Conv_To_USD" TO currency_conv_to_usd;
+-- Create country_data table
+CREATE TABLE country_data (
+	country VARCHAR NOT NULL,
+	lat FLOAT,
+	long FLOAT,
+	per_capita_income FLOAT,
+	currency_conv_to_usd FLOAT,
+	PRIMARY KEY (country)
+);
 	
 -- Remove quotation marks from column names
 ALTER TABLE public.marketing_data
@@ -80,3 +80,22 @@ CREATE TABLE demographic_data AS
 SELECT id, year_birth, education, marital_status, 
 		income, kid_home, teen_home, country
 FROM marketing_data;
+
+
+-- Create marking_complete table
+SELECT md.*,
+	cd.lat,
+	cd.long,
+	cd.per_capita_income,
+	cd.currency_conv_to_usd,
+	mdat.mnt_sum, 
+	mdat.purchases_sum
+INTO marketing_complete
+FROM marketing_data AS md
+	INNER JOIN country_data AS cd
+		ON (md.country = cd.country)
+	INNER JOIN marketing_data_amounts_total AS mdat
+		ON (md.id = mdat.id);
+
+SELECT * FROM marking_complete
+LIMIT 10;
