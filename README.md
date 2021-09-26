@@ -233,7 +233,112 @@ These 2182 records have been loaded in the marketing_data, in the AWS RDS:
 ![Screen Shot 2021-09-16 at 7.06.42 PM](https://i.imgur.com/DAjtz6w.png)
 
 
-This section would be added as we continue with the EDA process.
+## Data Analysis
+
+##### The total number of purchases per country:
+
+* Spain has the total number of purchases followed by South Africa
+
+
+![Screen Shot 2021-09-25 at 4.54.07 PM](https://i.imgur.com/izOcyBh.png)
+
+
+##### The total amount spent per country:
+
+* Customers in Spain spent the most amount of money, followed by customers in South Africa
+
+![Screen Shot 2021-09-25 at 4.55.44 PM](https://i.imgur.com/vMAvfVj.png)
+
+##### It can be seen that the total amount purchased decreases with the rise in dependents:
+
+![Screen Shot 2021-09-25 at 5.04.43 PM](https://i.imgur.com/0obtVA2.png)
+
+##### It can be seen that the purchase deals increase with the rise in dependents:
+
+![Screen Shot 2021-09-25 at 5.06.25 PM](https://i.imgur.com/ksXLi9C.png)
+
+##### The heat map has been created to find out the co-relationship between different fields:
+
+*The High Income Analysis*
+
+* The TotalMnt and all the Mnt Spent/ Mnt Fields are all positively correlated with Income. This means the higher the income, the more the amount people spent.
+* The TotalPurchases made and the Number of purchases are positvely correlated to Income
+
+*Dependents Analysis*
+
+* The Income, TotalMnt, Mnt fields, TotalPurchases and the number of purchases are all negatively correlated with Dependents
+* The NumDealsPurchases is positively linked with dependents
+
+![Screen Shot 2021-09-25 at 5.08.15 PM](https://i.imgur.com/2sZTKVZ.png)
+
+##### The average customer details are as below:
+
+* The average years of birth of a customer is 1969
+* The average income of a customer is $52K
+* The average number of dependents is 1
+
+![Screen Shot 2021-09-25 at 5.24.28 PM](https://i.imgur.com/JsPBZha.png)
+
+##### The average customer number of purchase details are as below:
+
+* The customer accepted less than 1 campaign
+* The average total purchases made by a customer is 15
+* The worst performing channel is Deals, followed by Catalog
+* The best performing channel is Store
+
+
+![Screen Shot 2021-09-25 at 5.35.32 PM](https://i.imgur.com/mqZ3H8f.png)
+
+##### The average customer spending details are as below:
+
+* An average customer spends the least on fruits
+* An average customer spends around $26 to 38 on Fruits, Sweet and Fish
+* An average customer spends the most on wine which is $304
+* An average customer spends around $605 
+
+![Screen Shot 2021-09-25 at 5.48.11 PM](https://i.imgur.com/N6LvvZv.png)
+
+#### Perform analysis on Customers having Dependents or No Dependents
+
+##### Customer having no dependents analysis
+
+##### The average number of purchase details for a customer having no dependents is as below:
+* The customer having no dependents accepted 1 campaign on an average
+* The average total number of purchases made by a customer having no dependents is 18
+* The worst performing channel is Deals, followed by Catalog
+* The best performing channel is Store
+
+![Screen Shot 2021-09-25 at 5.52.52 PM](https://i.imgur.com/EommMAe.png)
+
+##### The average spending for a customer having no dependents is as below:
+
+* An average customer spends the least on fruits
+* An average customer spends around $52 to 76 on Fruits, Sweet and Fish
+* An average customer spends the most on wine which is $490
+* An average customer spends around $110 
+
+![Screen Shot 2021-09-25 at 6.00.13 PM](https://i.imgur.com/bvojais.png)
+
+##### Customer having  dependents analysis
+
+##### The average number of purchase details for a customer having  dependents is as below:
+
+* The customer having dependents have accepted less than 1 campaign on an average
+* The average total number of purchases made by a customer having  dependents is 14
+* The worst performing channel is Catalog, followed by Deals
+* The best performing channel is Store
+
+![Screen Shot 2021-09-25 at 6.05.58 PM](https://i.imgur.com/fMA5TEh.png)
+
+##### The average spending for a customer having dependents is as below:
+
+* An average customer spends the least on fruits
+* An average customer spends around $ 16 to 22 on Fruits, Sweet and Fish
+* An average customer spends the most on wine which is $230
+* An average customer spends around $406 
+
+![Screen Shot 2021-09-25 at 6.10.50 PM](https://i.imgur.com/2G1RcFW.png)
+
 
 ## Create an RDS instance in AWS
 For this project, we will create a PostgresSQL database hosted on the cloud of AWS so that every member of the team has access to the same datasets. We first create an RDS instance on AWS, then a PostgresSQL database. After we are all set up on AWS, we connect pgAdmin to the RDS instance we just created.
