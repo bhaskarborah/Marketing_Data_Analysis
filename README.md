@@ -36,9 +36,8 @@ The key benefits of Data Segmentation are:
 
 #### Creating a summary of actionable findings to improve advertising campaign success:
 
-- To segment the data and train a predictive model which allows the company to maximize the profit of the next marketing campaign
 - Predict whether or not a customer will respond to the next campaign
-- Classify customers into clusters based on their buying behaviors and demographic info
+- Provide suggestions as to which are the most recommended campaigns to launch
 
 ##  Reason the topic was selected
 
@@ -298,6 +297,12 @@ These 2182 records have been loaded in the marketing_data, in the AWS RDS:
 
 ![Screen Shot 2021-09-25 at 5.48.11 PM](https://i.imgur.com/N6LvvZv.png)
 
+##### Campaign Details
+
+* The most successful campaign is the most recent one
+
+![Screen Shot 2021-09-26 at 1.37.28 PM](https://i.imgur.com/Av263W4.png)
+
 #### Perform analysis on Customers having Dependents or No Dependents
 
 ##### Customer having no dependents analysis
@@ -421,12 +426,46 @@ To see if overall spending has a linear relationship to the income of the househ
 - Run predictive models such as multiple regression to determine the factors for the next campaigns success.
 #### Summary of actionable findings to improve advertising campaign success
 - Perform EDA(exploratory data analysis) to determine the various factors for the campaign’s success.
-- Which products are performing best.
-- Which channels are underperforming.
+
+The EDA performed is described in the section "Preprocessing Data" and "Data Analysis" of this document.
+
 - Predict whether or not a customer will respond to the next campaign.
-- Based on the data,  predict if a customer will respond to the next campaign or not.
+- Based on the data,  predict if a customer will respond to the next 
+campaign or not.
+
+- Which marketing campaign is most successful?
+
+The most successful campaign is the most recent one
+
+![Screen Shot 2021-09-26 at 1.37.28 PM](https://i.imgur.com/WqzZ9R8.png)
+
+- What does the average customer look like for this company?
+
+The average customer details are as below:
+
+* An average customer spends the least on fruits
+* An average customer spends around $26 to 38 on Fruits, Sweet and Fish
+* An average customer spends the most on wine which is $304
+* An average customer spends around $605 
+
+![Screen Shot 2021-09-25 at 5.48.11 PM](https://i.imgur.com/N6LvvZv.png)
+
+- Which products are performing best?
+
+The best performing product is wine.
+
+- Which channels are under performing?
+
+The under performing channels are deals and catalog purchases (i.e. the average customer made the fewest purchases via these channels)
+
+- Which channels are best performing?
+
+The best performing channels are web and store purchases (i.e. the average customer made the most purchases via these channels)
+
+![Screen Shot 2021-09-25 at 5.35.32 PM](https://i.imgur.com/mqZ3H8f.png)
+
 #### Classify customers into clusters based on their buying behaviors and demographic information
-- Run a classification algorithm such as k-means to divide the consumers into different clusters based on their buying behaviours and demographic information. This could help in target marketing of a particular product to that particular cluster of consumers.
+- Run a classification algorithm such as k-means to divide the consumers into different clusters based on their buying behaviors and demographic information. This could help in target marketing of a particular product to that particular cluster of consumers.
 
 This section would be updated as we continue to work on the project.
 
