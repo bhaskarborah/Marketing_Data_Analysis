@@ -2,12 +2,13 @@
 
 UC Berkeley Data Visualization Final Project (**Team:** Nhi Nguyen, Vijaya Ayanampudi, Bhaskar Borah, and Scott MacDonald)
 
-Presentation Link: https://docs.google.com/presentation/d/1rXGLG-qk14EAdRtTDJJWhMR-93qbQhRi88W2aqQen0k/edit#slide=id.p
+Presentation Link: https://docs.google.com/presentation/d/1KhJib9LP4FQ9nTcyoOv1Mo9f-I2zbSNzxyXpxndN51Y/edit#slide=id.gf2ca90ab6f_0_0
 
 ## Overview of Project
 
-XYZ is a company which has an extensive marketing data set. However it has been noted by the Chief Marketing Officer that the recent campaigns of the company have not been as successful as they should be.
-The primary objective of this project is analyze the dataset, understand the problem and propose a data-driven solution to eradicate the problem.
+Sapphire Inc., a company located in Spain with a global footprint, has enlisted the help of four senior analysts to review their demographic and sales data assessing possible trends and opportunities to  increase revenue. 
+It has been noted by the Chief Marketing Officer that the recent campaigns of the company have not been as successful as they should be.
+The primary objective of this project is analyze the dataset, understand the problem and propose a data-driven solution to eradicate the problem and make a set of recommendations to the company as to which are the most feasible campaigns to launch.
 
 ## Purpose
 
