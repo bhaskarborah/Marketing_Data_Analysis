@@ -23,3 +23,7 @@ To see if overall spending has a linear relationship to the income of the househ
 - Based on the data,  predict if a customer will respond to the next campaign or not.
 #### Classify customers into clusters based on their buying behaviors and demographic information
 - Run a classification algorithm such as k-means to divide the consumers into different clusters based on their buying behaviours and demographic information. This could help in target marketing of a particular product to that particular cluster of consumers.
+#### Classifier model to predict wethere a customer is a responder or not.
+Explored the different classification models to check which one is giving a good accuracy in predicting wether a customer is a responder or not to the latest campaign based on the customer's demographic information and buying behaviours. 
+- Linear SVM gave a high accuracy of 88% 
+- ![image]()
