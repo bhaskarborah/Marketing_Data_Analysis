@@ -26,4 +26,4 @@ To see if overall spending has a linear relationship to the income of the househ
 #### Classifier model to predict wethere a customer is a responder or not.
 Explored the different classification models to check which one is giving a good accuracy in predicting wether a customer is a responder or not to the latest campaign based on the customer's demographic information and buying behaviours. 
 - Linear SVM gave a high accuracy of 88% 
-- ![image]()
+- ![image](https://github.com/bhaskarborah/Marketing_Data_Analysis/blob/vijaya-sg2/Resources/classifier_accuracy.png)
