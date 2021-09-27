@@ -95,7 +95,7 @@ For this project, we create a PostgresSQL database hosted on the cloud of AWS so
 ## ERD
 - Below is an ERD of our database
 
-![ERD](https://github.com/bhaskarborah/Marketing_Data_Analysis/tree/nhi-sg2/marketing_data_ERD.png)
+![ERD](https://github.com/bhaskarborah/Marketing_Data_Analysis/blob/nhi-sg2/marketing_data_ERD.png)
 
 ## Demographic Analysis of Campaign Responders
 - We divided customers into different groups of age: "<25", "25-35", "35-45", "45-55", "55-65", ">65".
@@ -108,5 +108,5 @@ For this project, we create a PostgresSQL database hosted on the cloud of AWS so
 
 - We added 2 new columns "Age_Group" and "Income_Group" to the dataset and use this dataset to create visualizations to analyze the demographic of campaign responders. We create a dashboard for each campaign and one for all campaigns.
 
-![all campaign demo](https://github.com/bhaskarborah/Marketing_Data_Analysis/tree/nhi-sg2/Demo_Analysis/all_cmps_demo.png)
+![all campaign demo](https://github.com/bhaskarborah/Marketing_Data_Analysis/blob/nhi-sg2/Demo_Analysis/all_cmps_demo.png)
 
