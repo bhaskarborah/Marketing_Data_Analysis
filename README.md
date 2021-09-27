@@ -39,7 +39,7 @@ For this project, we create a PostgresSQL database hosted on the cloud of AWS so
   
 - Next, we import the 'marketing_data.csv' into the 'marketing_data' table. Below is a screenshot of the table after the data has been imported:
 
-![marketing data table](https://github.com/bhaskarborah/Marketing_Data_Analysis/blob/nhi/Screenshots/marketing_data_table_pgAdmin.png)
+![marketing data table](https://github.com/bhaskarborah/Marketing_Data_Analysis/tree/nhi-sg2/Screenshots/marketing_data_table_pgAdmin.png)
 
 ## Reading from a PostgreSQL table to a pandas DataFrame
 - After loading the dataset into our postgres table, we create a pandas dataframe from the 'marketing_data' table in pgAdmin. We follow the below steps: 
@@ -48,7 +48,7 @@ For this project, we create a PostgresSQL database hosted on the cloud of AWS so
   - loading data from Postgres table into a panda dataframe to check the communication between Pandas and SQL server.
 - Below is a screenshot of the Pandas dataframe:
 
-![mockup database](https://github.com/bhaskarborah/Marketing_Data_Analysis/blob/nhi/Screenshots/marketing_df_pd.png)
+![mockup database](https://github.com/bhaskarborah/Marketing_Data_Analysis/tree/nhi-sg2/Screenshots/marketing_df_pd.png)
 
 ## Exporting clean marketing_data into the database
 - After successfully test the connection between Pandas and our SQL server, we drop the marketing_data table.
@@ -94,4 +94,19 @@ For this project, we create a PostgresSQL database hosted on the cloud of AWS so
 
 ## ERD
 - Below is an ERD of our database
-![ERD](https://github.com/bhaskarborah/Marketing_Data_Analysis/blob/nhi-sg2/marketing_data_ERD.png)
+
+![ERD](https://github.com/bhaskarborah/Marketing_Data_Analysis/tree/nhi-sg2/marketing_data_ERD.png)
+
+## Demographic Analysis of Campaign Responders
+- We divided customers into different groups of age: "<25", "25-35", "35-45", "45-55", "55-65", ">65".
+
+![age group](https://github.com/bhaskarborah/Marketing_Data_Analysis/blob/nhi-sg2/Screenshots/age_group_binning.png)
+
+- We divided customers into different groups of income: "<10k", "10-35k", "35-55k", "55-75k", "75-90k", "90-120k", and ">120k".
+
+![income group](https://github.com/bhaskarborah/Marketing_Data_Analysis/tree/nhi-sg2/Screenshots/income_group_binning.png)
+
+- We added 2 new columns "Age_Group" and "Income_Group" to the dataset and use this dataset to create visualizations to analyze the demographic of campaign responders. We create a dashboard for each campaign and one for all campaigns.
+
+![all campaign demo](https://github.com/bhaskarborah/Marketing_Data_Analysis/tree/nhi-sg2/Demo_Analysis/all_cmps_demo.png)
+
