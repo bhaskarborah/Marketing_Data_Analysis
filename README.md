@@ -399,6 +399,67 @@ For this project, we will create a PostgresSQL database hosted on the cloud of A
 
 ![marketing_df_pd](https://i.imgur.com/f4gzrfv.png)
 
+## Exporting clean marketing_data into the database
+- After successfully test the connection between Pandas and our SQL server, we drop the marketing_data table.
+- After performing data cleaning and transformation using Pandas library, we follow the above steps to export the marketing_data Pandas DataFrame into a Postgres table stored in our database.
+
+## Performing a join to create marketing_complete table
+- We join marketing_data table with country_data and marketing_data_amounts_total tables into a table called marketing_complete. This table contains 2182 rows and 34 columns.
+  -- Create marking_complete table
+  SELECT md.*,
+	  cd.lat,
+	  cd.long,
+	  cd.per_capita_income,
+	  cd.currency_conv_to_usd,
+	  mdat.mnt_sum, 
+	  mdat.purchases_sum
+  INTO marketing_complete
+  FROM marketing_data AS md
+	  INNER JOIN country_data AS cd
+		  ON (md.country = cd.country)
+	  INNER JOIN marketing_data_amounts_total AS mdat
+		  ON (md.id = mdat.id);
+- Then, we export the marketing_data table into a csv file for future use in data visualization and building machine learning models. 
+
+## ERD
+- Below is an ERD of our database
+
+![marketing_data_ERD](https://i.imgur.com/vcEOl1S.png)
+
+## Demographic Analysis of Campaign Responders
+- We divide customers into different groups of age: "<25", "25-35", "35-45", "45-55", "55-65", and ">65".
+
+![age_group_binning](https://i.imgur.com/mKfZtAW.png)
+
+- We divide customers into different groups of income: "<10k", "10-35k", "35-55k", "55-75k", "75-90k", "90-120k", and ">120k".
+
+![income_group_binning](https://i.imgur.com/GcASwNl.png)
+
+- We add 2 new columns "Age_Group" and "Income_Group" to the dataset and use this dataset to create visualizations to analyze the demographic of campaign responders. We create a dashboard for each campaign and one for all campaigns.
+
+
+![all_cmps_demo](https://i.imgur.com/cBoo8ni.png)
+
+## Creating a subset of marketing_data table
+- We create a subset of the marketing_data table and call it demographic_data
+  -- Create demographic_data table
+  CREATE TABLE demographic_data AS
+  SELECT id, year_birth, education, marital_status, 
+		  income, kid_home, teen_home, country
+  FROM marketing_data;
+
+## Importing country_data.csv into a Postgres table
+- We create a table called country_data in pgAdmin and import the country_data.csv into that table.
+  -- Create country_data table
+  CREATE TABLE country_data (
+	  country VARCHAR NOT NULL,
+	  lat FLOAT,
+	  long FLOAT,
+	  per_capita_income FLOAT,
+	  currency_conv_to_usd FLOAT,
+	  PRIMARY KEY (country)
+  );
+
 ## Machine Learning
 
 #### Connect to the provisional database
