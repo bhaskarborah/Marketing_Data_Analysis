@@ -1,0 +1,101 @@
+-- Create country_data table
+CREATE TABLE country_data (
+	country VARCHAR NOT NULL,
+	lat FLOAT,
+	long FLOAT,
+	per_capita_income FLOAT,
+	currency_conv_to_usd FLOAT,
+	PRIMARY KEY (country)
+);
+	
+-- Remove quotation marks from column names
+ALTER TABLE public.marketing_data
+    RENAME "ID" TO id;
+ALTER TABLE public.marketing_data
+    RENAME "Year_Birth" TO year_birth;
+ALTER TABLE public.marketing_data
+    RENAME "Education" TO education;
+ALTER TABLE public.marketing_data
+    RENAME "Marital_Status" TO marital_status;
+ALTER TABLE public.marketing_data
+    RENAME "Income" TO income;
+ALTER TABLE public.marketing_data
+    RENAME "Kidhome" TO kid_home;
+ALTER TABLE public.marketing_data
+    RENAME "Teenhome" TO teen_home;
+ALTER TABLE public.marketing_data
+    RENAME "Dt_Customer" TO dt_customer;
+ALTER TABLE public.marketing_data
+    RENAME "Recency" TO recency;
+ALTER TABLE public.marketing_data
+    RENAME "MntWines" TO mn_twines;
+ALTER TABLE public.marketing_data
+    RENAME "MntFruits" TO mnt_fruits;
+ALTER TABLE public.marketing_data
+    RENAME "MntMeatProducts" TO mnt_meat_products;
+ALTER TABLE public.marketing_data
+    RENAME "MntFishProducts" TO mnt_fish_products;
+ALTER TABLE public.marketing_data
+    RENAME "MntSweetProducts" TO mnt_sweet_products;
+ALTER TABLE public.marketing_data
+    RENAME "MntGoldProds" TO mnt_gold_prods;
+ALTER TABLE public.marketing_data
+    RENAME "NumDealsPurchases" TO num_deals_purchases;
+ALTER TABLE public.marketing_data
+    RENAME "NumWebPurchases" TO num_web_purchases;
+ALTER TABLE public.marketing_data
+    RENAME "NumCatalogPurchases" TO num_catalog_purchases;
+ALTER TABLE public.marketing_data
+    RENAME "NumStorePurchases" TO num_store_purchases;
+ALTER TABLE public.marketing_data
+    RENAME "NumWebVisitsMonth" TO num_web_visits_month;
+ALTER TABLE public.marketing_data
+    RENAME "AcceptedCmp3" TO accepted_cmp3;
+ALTER TABLE public.marketing_data
+    RENAME "AcceptedCmp4" TO accepted_cmp4;
+ALTER TABLE public.marketing_data
+    RENAME "AcceptedCmp5" TO accepted_cmp5;
+ALTER TABLE public.marketing_data
+    RENAME "AcceptedCmp1" TO accepted_cmp1;
+ALTER TABLE public.marketing_data
+    RENAME "AcceptedCmp2" TO accepted_cmp2;
+ALTER TABLE public.marketing_data
+    RENAME "Response" TO response;
+ALTER TABLE public.marketing_data
+    RENAME "Complain" TO complain;
+ALTER TABLE public.marketing_data
+    RENAME "Country" TO country;
+
+-- Remove quotation marks from column names
+ALTER TABLE public.marketing_data_amounts_total
+    RENAME "ID" TO id;
+ALTER TABLE public.marketing_data_amounts_total
+    RENAME "MntSum" TO mnt_sum;
+ALTER TABLE public.marketing_data_amounts_total
+    RENAME "PurchasesSum" TO purchases_sum;
+
+
+-- Create demographic_data table
+CREATE TABLE demographic_data AS
+SELECT id, year_birth, education, marital_status, 
+		income, kid_home, teen_home, country
+FROM marketing_data;
+
+
+-- Create marking_complete table
+SELECT md.*,
+	cd.lat,
+	cd.long,
+	cd.per_capita_income,
+	cd.currency_conv_to_usd,
+	mdat.mnt_sum, 
+	mdat.purchases_sum
+INTO marketing_complete
+FROM marketing_data AS md
+	INNER JOIN country_data AS cd
+		ON (md.country = cd.country)
+	INNER JOIN marketing_data_amounts_total AS mdat
+		ON (md.id = mdat.id);
+
+SELECT * FROM marking_complete
+LIMIT 10;
