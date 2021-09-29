@@ -32,17 +32,18 @@ The key benefits of Data Segmentation are:
 
 - Which marketing campaign is most successful?
 - What does the average customer look like for this company?
-- Which products are performing best?
-- Which channels are underperforming?
+- Which products are performing the best?
+- Which channels are under performing?
 
 #### Creating a summary of actionable findings to improve advertising campaign success:
 
 - Predict whether or not a customer will respond to the next campaign
 - Provide suggestions as to which are the most recommended campaigns to launch
+- Provide a demographic segmentation of the customer base and advise feasible campaigns based on the demographics of a customer
 
 ##  Reason the topic was selected
 
-#### In a very competitive marketplace, companies must optimize their potential addressable market (PAM). Using market segmentation, the benifits are less wasted resources (time and money). It allows the company to target specific potential customers that would most likely turn into actual customers by learning their needs and wants and fulfilling them.
+#### In a very competitive marketplace, companies must optimize their potential addressable market (PAM). Using market segmentation, the benefits are less wasted resources (time and money). It allows the company to target specific potential customers that would most likely turn into actual customers by learning their needs and wants and fulfilling them.
 
 "Market segmentation can help you to define and better understand your target audiences and ideal customers. If you’re a marketer, this allows you to [identify the right market for your products](https://www.lotame.com/what-is-market-segmentation/) and then target your marketing more effectively. Similarly, publishers can use market segmentation to offer more precisely targeted advertising options and to customize their content for different audience groups."
 
@@ -483,25 +484,22 @@ To see if overall spending has a linear relationship to the income of the househ
 
 ### Future Analysis
 
-#### To train a predictive model which allows the company to maximize the profit of the next marketing campaign
+##### To train a predictive model which allows the company to maximize the profit of the next marketing campaign
 - Define the features and target. Split the data into training set and test set. 
 - Run predictive models such as multiple regression to determine the factors for the next campaigns success.
-#### Summary of actionable findings to improve advertising campaign success
-- Perform EDA(exploratory data analysis) to determine the various factors for the campaign’s success.
+##### Summary of actionable findings to improve advertising campaign success
+##### Perform EDA (exploratory data analysis) to determine the various factors for the campaign’s success.
 
 The EDA performed is described in the section "Preprocessing Data" and "Data Analysis" of this document.
 
-- Predict whether or not a customer will respond to the next campaign.
-- Based on the data,  predict if a customer will respond to the next 
-campaign or not.
 
-- Which marketing campaign is most successful?
+##### Which marketing campaign is most successful?
 
 The most successful campaign is the most recent one
 
 ![Screen Shot 2021-09-26 at 1.37.28 PM](https://i.imgur.com/WqzZ9R8.png)
 
-- What does the average customer look like for this company?
+##### What does the average customer look like for this company?
 
 The average customer details are as below:
 
@@ -512,30 +510,48 @@ The average customer details are as below:
 
 ![Screen Shot 2021-09-25 at 5.48.11 PM](https://i.imgur.com/N6LvvZv.png)
 
-- Which products are performing best?
+##### Which products are performing best?
 
 The best performing product is wine.
 
-- Which channels are under performing?
+##### Which channels are under performing?
 
 The under performing channels are deals and catalog purchases (i.e. the average customer made the fewest purchases via these channels)
 
-- Which channels are best performing?
+##### Which channels are best performing?
 
 The best performing channels are web and store purchases (i.e. the average customer made the most purchases via these channels)
 
 ![Screen Shot 2021-09-25 at 5.35.32 PM](https://i.imgur.com/mqZ3H8f.png)
 
-#### Classify customers into clusters based on their buying behaviors and demographic information
+##### Classify customers into clusters based on their buying behaviors and demographic information
 - Run a classification algorithm such as k-means to divide the consumers into different clusters based on their buying behaviors and demographic information. This could help in target marketing of a particular product to that particular cluster of consumers.
 
-#### Classifier model to predict whether a customer is a responder or not.
+##### Classifier model to predict whether a customer is a responder or not.
+
+- Predict whether or not a customer will respond to the next campaign.
+
 Explored the different classification models to check which one is giving a good accuracy in predicting whether a customer is a responder or not to the latest campaign based on the customer's demographic information and buying behaviors. 
-- Linear SVM gave a high accuracy of 88% 
+
+*Linear SVM gave a high accuracy of 88%* 
 
 ![classifier_accuracy](https://i.imgur.com/thwxHoX.png)
 
-This section would be updated as we continue to work on the project.
+##### Provide suggestions as to which are the most recommended campaigns to launch
+
+* The most successful  campaign was the most recent campaign (column name: Response)
+Suggested campaign action item:
+*Similar campaigns can be conducted for maximizing response*
+
+* It has been found that campaign acceptance is positively correlated with income and negatively correlated with having dependents (kids/teenagers)
+Suggested campaign action item: 
+*Create two streams of targeted advertising campaigns, one aimed at high-income individuals without any dependents and another aimed at lower-income individuals with dependents.*
+*It can be seen that customers with dependents make the most purchases using deals. A campaign can be launched for customers with dependents including all items, as they do spend less average purchase.*
+
+* The most successful products are wines and meats (i.e. the average customer spent the most on these items)
+Suggested campaign action item: 
+*Launch advertising campaigns on boosting sales of the less popular items*
+*Also launch advertising campaigns including better prices for Wine and Meat products for customers with no dependents as they spend more on these items than the average customer*
 
 
 
