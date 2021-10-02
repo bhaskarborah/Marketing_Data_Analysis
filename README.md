@@ -90,7 +90,26 @@ For this project, we create a PostgresSQL database hosted on the cloud of AWS so
 		  ON (md.country = cd.country)
 	  INNER JOIN marketing_data_amounts_total AS mdat
 		  ON (md.id = mdat.id);
-- Then, we export the marketing_data table into a csv file for future use in data visualization and building machine learning models.  
+- Then, we export the marketing_data table into a csv file for future use in data visualization and building machine learning models.
+
+## Create cmp_country table
+- We create a Pandas dataset with 9 columns in jupyter notebook containing the number of each campaign’s responder for each country.
+- We export the cmp_country dataframe into a csv file stored in the 'Resources' folder.
+- We create a table called cmp_country in pgAdmin and import the cmp_country.csv into that table.
+  -- Create cmp_country table
+  CREATE TABLE cmp_country (
+	  country VARCHAR NOT NULL,
+	  total_customers INT,
+	  cmp1_response FLOAT,
+	  cmp2_response FLOAT,
+	  cmp3_response FLOAT,
+	  cmp4_response FLOAT,
+	  cmp5_response FLOAT,
+	  cmp6_response FLOAT,
+	  cmps_response FLOAT,
+	  PRIMARY KEY (country),
+	  FOREIGN KEY (country) REFERENCES country_data(country)
+  );
 
 ## ERD
 - Below is an ERD of our database

@@ -99,3 +99,18 @@ FROM marketing_data AS md
 
 SELECT * FROM marking_complete
 LIMIT 10;
+
+-- Create cmp_country table
+CREATE TABLE cmp_country (
+	  country VARCHAR NOT NULL,
+	  total_customers INT,
+	  cmp1_response FLOAT,
+	  cmp2_response FLOAT,
+	  cmp3_response FLOAT,
+	  cmp4_response FLOAT,
+	  cmp5_response FLOAT,
+	  cmp6_response FLOAT,
+	  cmps_response FLOAT,
+	  PRIMARY KEY (country),
+	  FOREIGN KEY (country) REFERENCES country_data(country)
+  );
