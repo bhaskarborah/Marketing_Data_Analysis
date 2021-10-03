@@ -1,0 +1,26 @@
+# Marketing_Data Schema
+
+Demographic_Data
+-
+ID int pk
+Year_Birth int INDEX
+Education string
+Marital_Status string
+Income float
+Kid_Home int
+Teen_Home int
+Country string 
+
+Country_Data
+-
+Country string pk
+Lat float
+Long float
+Per_Capita_Income float
+Currency_Conv_To_USD float
+
+Marketing_Data_Amounts_Total
+-
+ID int pk fk - Demographic_Data.ID
+Mnt_Sum float
+Purchases_Sum int
