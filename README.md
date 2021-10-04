@@ -32,14 +32,14 @@ The key benefits of Data Segmentation are:
 4. Allows us to create a predictive model based on the segmented data for better accuracy in the predictions.
 
 
-#### Our team hopes to answer the following questions with the data:
+### Our team hopes to answer the following questions with the data:
 
 - Which marketing campaign is most successful?
 - What does the average customer look like for this company?
 - Which products are performing the best?
 - Which channels are under performing?
 
-#### Creating a summary of actionable findings to improve advertising campaign success:
+### Creating a summary of actionable findings to improve advertising campaign success:
 
 - Predict whether or not a customer will respond to the latest campaign
 - Provide suggestions as to which are the most recommended campaigns to launch
@@ -47,7 +47,7 @@ The key benefits of Data Segmentation are:
 
 ##  Reason the topic was selected
 
-##### In a very competitive marketplace, companies must optimize their potential addressable market (PAM). Using market segmentation, the benefits are less wasted resources (time and money). It allows the company to target specific potential customers that would most likely turn into actual customers by learning their needs and wants and fulfilling them.
+### In a very competitive marketplace, companies must optimize their potential addressable market (PAM). Using market segmentation, the benefits are less wasted resources (time and money). It allows the company to target specific potential customers that would most likely turn into actual customers by learning their needs and wants and fulfilling them.
 
 "Market segmentation can help you to define and better understand your target audiences and ideal customers. If you’re a marketer, this allows you to [identify the right market for your products](https://www.lotame.com/what-is-market-segmentation/) and then target your marketing more effectively. Similarly, publishers can use market segmentation to offer more precisely targeted advertising options and to customize their content for different audience groups."
 
@@ -286,7 +286,7 @@ The completed dataset is loaded into the marketing_data_complete table in Postgr
 
 ## Data Analysis
 
-##### The total number of purchases per country:
+### The total number of purchases per country:
 
 * Spain has the total number of purchases followed by South Africa
 
@@ -294,21 +294,21 @@ The completed dataset is loaded into the marketing_data_complete table in Postgr
 ![Screen Shot 2021-09-25 at 4.54.07 PM](https://i.imgur.com/izOcyBh.png)
 
 
-##### The total amount spent per country:
+### The total amount spent per country:
 
 * Customers in Spain spent the most amount of money, followed by customers in South Africa
 
 ![Screen Shot 2021-09-25 at 4.55.44 PM](https://i.imgur.com/vMAvfVj.png)
 
-##### It can be seen that the total amount purchased decreases with the rise in dependents:
+### It can be seen that the total amount purchased decreases with the rise in dependents:
 
 ![Screen Shot 2021-09-25 at 5.04.43 PM](https://i.imgur.com/0obtVA2.png)
 
-##### It can be seen that the purchase deals increase with the rise in dependents:
+### It can be seen that the purchase deals increase with the rise in dependents:
 
 ![Screen Shot 2021-09-25 at 5.06.25 PM](https://i.imgur.com/ksXLi9C.png)
 
-##### The heat map has been created to find out the co-relationship between different fields:
+### The heat map has been created to find out the co-relationship between different fields:
 
 *The High Income Analysis*
 
@@ -322,7 +322,7 @@ The completed dataset is loaded into the marketing_data_complete table in Postgr
 
 ![Screen Shot 2021-09-25 at 5.08.15 PM](https://i.imgur.com/2sZTKVZ.png)
 
-##### The average customer details are as below:
+### The average customer details are as below:
 
 * The average years of birth of a customer is 1969
 * The average income of a customer is $52K
@@ -330,7 +330,7 @@ The completed dataset is loaded into the marketing_data_complete table in Postgr
 
 ![Screen Shot 2021-09-25 at 5.24.28 PM](https://i.imgur.com/JsPBZha.png)
 
-##### The average customer number of purchase details are as below:
+### The average customer number of purchase details are as below:
 
 * The customer accepted less than 1 campaign
 * The average total purchases made by a customer is 15
@@ -340,7 +340,7 @@ The completed dataset is loaded into the marketing_data_complete table in Postgr
 
 ![Screen Shot 2021-09-25 at 5.35.32 PM](https://i.imgur.com/mqZ3H8f.png)
 
-##### The average customer spending details are as below:
+### The average customer spending details are as below:
 
 * An average customer spends the least on fruits
 * An average customer spends around $26 to 38 on Fruits, Sweet and Fish
@@ -349,17 +349,17 @@ The completed dataset is loaded into the marketing_data_complete table in Postgr
 
 ![Screen Shot 2021-09-25 at 5.48.11 PM](https://i.imgur.com/N6LvvZv.png)
 
-##### Campaign Details
+### Campaign Details
 
 * The most successful campaign is the most recent one
 
 ![Screen Shot 2021-10-03 at 5.47.55 PM](https://i.imgur.com/nvQjQYK.png)
 
-#### Perform analysis on Customers having Dependents or No Dependents
+### Perform analysis on Customers having Dependents or No Dependents
 
-##### Customer having no dependents analysis
+### Customer having no dependents analysis
 
-##### The average number of purchase details for a customer having no dependents is as below:
+### The average number of purchase details for a customer having no dependents is as below:
 * The customer having no dependents accepted 1 campaign on an average
 * The average total number of purchases made by a customer having no dependents is 18
 * The worst performing channel is Deals, followed by Catalog
@@ -367,7 +367,7 @@ The completed dataset is loaded into the marketing_data_complete table in Postgr
 
 ![Screen Shot 2021-10-03 at 5.48.54 PM](https://i.imgur.com/c3L97l6.png)
 
-##### The average spending for a customer having no dependents is as below:
+### The average spending for a customer having no dependents is as below:
 
 * An average customer spends the least on fruits
 * An average customer spends around $52 to 76 on Fruits, Sweet and Fish
@@ -376,16 +376,16 @@ The completed dataset is loaded into the marketing_data_complete table in Postgr
 
 ![Screen Shot 2021-10-03 at 5.49.35 PM](https://i.imgur.com/imnlp7Q.png)
 
-##### The campaign details for a customer having no dependents:
+### The campaign details for a customer having no dependents:
 
 * The most successful campaign is the latest campaign
 * The second most successful campaign is Campaign 5
 
 ![Screen Shot 2021-10-03 at 5.50.46 PM](https://i.imgur.com/NgfZQ9Y.png)
 
-##### Customer having  dependents analysis
+### Customer having  dependents analysis
 
-##### The average number of purchase details for a customer having  dependents is as below:
+### The average number of purchase details for a customer having  dependents is as below:
 
 * The customer having dependents have accepted less than 1 campaign on an average
 * The average total number of purchases made by a customer having  dependents is 14
@@ -394,7 +394,7 @@ The completed dataset is loaded into the marketing_data_complete table in Postgr
 
 ![Screen Shot 2021-10-03 at 5.52.10 PM](https://i.imgur.com/7W0rxW8.png)
 
-##### The average spending for a customer having dependents is as below:
+### The average spending for a customer having dependents is as below:
 
 * An average customer spends the least on fruits
 * An average customer spends around $ 16 to 22 on Fruits, Sweet and Fish
@@ -403,7 +403,7 @@ The completed dataset is loaded into the marketing_data_complete table in Postgr
 
 ![Screen Shot 2021-10-03 at 5.52.42 PM](https://i.imgur.com/a5HF8L7.png)
 
-##### The campaign details for a customer having dependents:
+### The campaign details for a customer having dependents:
 
 * The most successful campaign is the latest campaign
 * The second most successful campaign is Campaign 3
@@ -411,10 +411,10 @@ The completed dataset is loaded into the marketing_data_complete table in Postgr
 ![Screen Shot 2021-10-03 at 5.54.09 PM](https://i.imgur.com/CEB1eAv.png)
 
 ## Database
-#### Create an RDS instance in AWS
+### Create an RDS instance in AWS
 For this project, we will create a PostgresSQL database hosted on the cloud of AWS so that every member of the team has access to the same datasets. We first create an RDS instance on AWS, then a PostgresSQL database. After we are all set up on AWS, we connect pgAdmin to the RDS instance we just created.
 
-#### pgAdmin Schema
+### pgAdmin Schema
 - After creating a pgAdmin server that is connect to our RDS instance, we test the connection by creating a table and load the 'marketing_data.csv' into that table. We run the following query in pgAdmin query tool:
 
         CREATE TABLE marketing_data (
@@ -454,7 +454,7 @@ For this project, we will create a PostgresSQL database hosted on the cloud of A
 
 ![marketing_data_table_pgAdmin](https://i.imgur.com/79SxYBA.png)
 
-#### Reading from a PostgreSQL table to a pandas DataFrame
+### Reading from a PostgreSQL table to a pandas DataFrame
 - The "marketing_data" dataset contains 2240 rows and 28 columns. After loading and transforming the dataset, we save the clean dataframe in a Postgres database for future use. 
 - After loading the dataset into our postgres table, we create a pandas dataframe from the 'marketing_data' table in pgAdmin. We follow the below steps: 
   - creating a connection string for the database engine to connect to the database
@@ -464,11 +464,11 @@ For this project, we will create a PostgresSQL database hosted on the cloud of A
 
 ![marketing_df_pd](https://i.imgur.com/f4gzrfv.png)
 
-#### Exporting clean marketing_data into the database
+### Exporting clean marketing_data into the database
 - After successfully test the connection between Pandas and our SQL server, we drop the marketing_data table.
 - After performing data cleaning and transformation using Pandas library, we follow the above steps to export the marketing_data Pandas DataFrame into a Postgres table stored in our database.
 
-#### Importing country_data.csv into a Postgres table
+### Importing country_data.csv into a Postgres table
 - We create a table called country_data in pgAdmin and import the country_data.csv into that table.
                   
                   -- Create country_data table
@@ -481,7 +481,7 @@ For this project, we will create a PostgresSQL database hosted on the cloud of A
                     PRIMARY KEY (country)
                   );
 
-#### Creating a subset of marketing_data table
+### Creating a subset of marketing_data table
 - We create a subset of the marketing_data table and call it demographic_data          
 
                 -- Create demographic_data table
@@ -491,7 +491,7 @@ For this project, we will create a PostgresSQL database hosted on the cloud of A
                     FROM marketing_data;
           
 
-#### Performing a join to create marketing_complete table
+### Performing a join to create marketing_complete table
 - We join marketing_data table with country_data and marketing_data_amounts_total tables into a table called marketing_complete. This table contains 2182 rows and 34 columns.
                 
                 -- Create marking_complete table
@@ -510,7 +510,7 @@ For this project, we will create a PostgresSQL database hosted on the cloud of A
                     ON (md.id = mdat.id);
 - Then, we export the marketing_data table into a csv file for future use in data visualization and building machine learning models.
 
-#### Create cmp_country table
+### Create cmp_country table
 - We create a Pandas dataset with 9 columns in jupyter notebook containing the number of each campaign’s responder for each country.
 - We export the cmp_country dataframe into a csv file stored in the 'Resources' folder.
 - We create a table called cmp_country in pgAdmin and import the cmp_country.csv into that table.
@@ -530,7 +530,7 @@ For this project, we will create a PostgresSQL database hosted on the cloud of A
               FOREIGN KEY (country) REFERENCES country_data(country)
             );
 
-#### Create marketing_data_complete table
+### Create marketing_data_complete table
 
 - This table contains the complete marketing_data information along with the age, encoded education, relationship values
 
@@ -581,16 +581,16 @@ The Data Definition Language (DDL) statement to create the table is:
 
 
 
-#### The summary of the tables that we have created is as below:
+### The summary of the tables that we have created is as below:
 ![Screen Shot 2021-10-03 at 6.16.17 PM](https://i.imgur.com/SyvVxBa.png)
 
 
-#### ERD
+### ERD
 - Below is an ERD of our database
 
 ![marketing_data_ERD](https://i.imgur.com/f2iFxqS.png)
 
-#### Demographic Analysis of Campaign Responders
+### Demographic Analysis of Campaign Responders
 - We divide customers into different groups of age: "<25", "25-35", "35-45", "45-55", "55-65", and ">65".
 
 
@@ -609,7 +609,7 @@ The Data Definition Language (DDL) statement to create the table is:
 
 ## Machine Learning
 
-#### Connect to the provisional database
+### Connect to the provisional database
 
 
 
@@ -622,16 +622,16 @@ The Data Definition Language (DDL) statement to create the table is:
 
 ![acessdata](https://i.imgur.com/3BRQJfL.png)
 
-#### Initial EDA
+### Initial EDA
 To see if overall spending has a linear relationship to the income of the household. From the figure below for linear regression model the overall spending and income seem to have a linear relation.
 
 ![LinearRegression](https://i.imgur.com/0XhOavM.png)
 
-#### The data is read from the PostgresDB
+### The data is read from the PostgresDB
 
 ![Screen Shot 2021-10-03 at 6.18.51 PM](https://i.imgur.com/FO5whZa.png)
 
-#### Read the required data for ML
+### Read the required data for ML
 
 The required columns are read for ML:
 
@@ -731,19 +731,19 @@ The pros and cons of K-means is as below:
 
 ### Analysis Results and Conclusions
 
-##### Summary of actionable findings to improve advertising campaign success
+### Summary of actionable findings to improve advertising campaign success
 ##### Perform EDA (exploratory data analysis) to determine the various factors for the campaign’s success.
 
 *The EDA performed is described in the section "Preprocessing Data" and "Data Analysis" of this document*
 
 
-##### Which marketing campaign is most successful?
+### Which marketing campaign is most successful?
 
 *The most successful campaign is the most recent one*
 
 ![Screen Shot 2021-10-03 at 5.47.55 PM](https://i.imgur.com/nvQjQYK.png)
 
-##### What does the average customer look like for this company?
+### What does the average customer look like for this company?
 
 *The average customer details are as below:*
 
@@ -754,21 +754,21 @@ The pros and cons of K-means is as below:
 
 ![Screen Shot 2021-09-25 at 5.48.11 PM](https://i.imgur.com/N6LvvZv.png)
 
-##### Which products are performing best?
+### Which products are performing best?
 
 *The best performing product is wine*
 
-##### Which channels are under performing?
+### Which channels are under performing?
 
 *The under performing channels are deals and catalog purchases (i.e. the average customer made the fewest purchases via these channels)*
 
-##### Which channels are best performing?
+### Which channels are best performing?
 
 *The best performing channels are web and store purchases (i.e. the average customer made the most purchases via these channels)*
 
 ![Screen Shot 2021-09-25 at 5.35.32 PM](https://i.imgur.com/mqZ3H8f.png)
 
-##### Classify customers into clusters based on their buying behaviors and demographic information
+### Classify customers into clusters based on their buying behaviors and demographic information
 - Run a classification algorithm such as k-means to divide the consumers into different clusters based on their buying behaviors and demographic information. This could help in target marketing of a particular product to that particular cluster of consumers.
 
 *SVM has the greatest accuracy and K-means is the best method to cluster the data*
@@ -781,7 +781,7 @@ The pros and cons of K-means is as below:
 
 ![Screen Shot 2021-10-03 at 6.46.04 PM](https://i.imgur.com/SrlThwl.png)
 
-##### Classifier model to predict whether a customer is a responder or not.
+### Classifier model to predict whether a customer is a responder or not.
 
 - Predict whether or not a customer will respond to the next campaign.
 
@@ -791,13 +791,13 @@ The pros and cons of K-means is as below:
 
 ![classifier_accuracy](https://i.imgur.com/thwxHoX.png)
 
-##### To train a predictive model which allows the company to maximize the profit of the next marketing campaign
+### To train a predictive model which allows the company to maximize the profit of the next marketing campaign
 - Define the features and target. Split the data into training set and test set. 
 - Run predictive models such as multiple regression to determine the factors for the campaigns' success.
 
 *All of the above questions have been answered/implemented in the "Machine Learning" section of this document*
 
-##### Provide suggestions as to which are the most recommended campaigns to launch
+### Provide suggestions as to which are the most recommended campaigns to launch
 
 * The most successful  campaign was the most recent campaign (column name: Response)
 
@@ -811,6 +811,7 @@ Suggested campaigns:
 Suggested campaigns: 
 *Create two streams of targeted advertising campaigns:*
 *One aimed at high-income individuals without any dependents and another aimed at lower-income individuals with dependents.*
+
 *It can be seen that customers with dependents make the most purchases using deals. A campaign can be launched for customers with dependents including all items, as they do spend less average purchase.*
 
 * The most successful products are wines and meat (i.e. the average customer spent the most on these items)
