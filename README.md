@@ -267,7 +267,8 @@ The total campaign detail is also calculated by summing up all the campaign deta
 
 The age field has been calculated, by subtracting the year of birth from 2014, as the year when this dataset was created is 2014:
 
-![Screen Shot 2021-10-03 at 4.54.48 PM](https://i.imgur.com/YYStrVA.png)
+![Screen Shot 2021-10-03 at 7.16.57 PM](https://i.imgur.com/uNRVZOv.png)
+
 
 The field edu_classes with the encoded values for Education has been calculated. This field would be used in the Machine Learning models if required. If not required, then we would not be using in it the ML process
 
@@ -656,6 +657,8 @@ The Gradient Boosting Classifier is applied on the dataset:
 
 ![Screen Shot 2021-10-03 at 6.25.46 PM](https://i.imgur.com/tdAzQ9c.png)
 
+
+
 ![Screen Shot 2021-10-03 at 6.26.49 PM](https://i.imgur.com/T7gfkLb.png)
 
 The K Nearest Neighbor Algorithm is applied to the dataset:
@@ -797,22 +800,32 @@ The pros and cons of K-means is as below:
 ##### Provide suggestions as to which are the most recommended campaigns to launch
 
 * The most successful  campaign was the most recent campaign (column name: Response)
+
+
 Suggested campaigns:
 *Similar campaigns can be conducted for maximizing customer response and revenue generation*
 
 * It has been found that campaign acceptance is positively correlated with income and negatively correlated with having dependents (kids/teenagers)
+
+
 Suggested campaigns: 
 *Create two streams of targeted advertising campaigns:*
 *One aimed at high-income individuals without any dependents and another aimed at lower-income individuals with dependents.*
 *It can be seen that customers with dependents make the most purchases using deals. A campaign can be launched for customers with dependents including all items, as they do spend less average purchase.*
 
 * The most successful products are wines and meat (i.e. the average customer spent the most on these items)
+
+
+
 Suggested campaigns: 
 *Launch advertising campaigns on boosting sales of the less popular items*
 *Also launch advertising campaigns including better prices for Wine and Meat products for customers with no dependents as they spend more on these items than the average customer*
 
-*The best performing channels are web and store purchases* 
-*Suggested campaign: Focus advertising campaigns on the more successful channels, to reach more customers*
+The best performing channels are web and store purchases
+
+
+Suggested campaign: 
+*Focus advertising campaigns on the more successful channels, to reach more customers*
 
 
 
