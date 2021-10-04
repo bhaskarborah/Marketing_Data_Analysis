@@ -822,7 +822,7 @@ Suggested campaigns:
 *Launch advertising campaigns on boosting sales of the less popular items*
 *Also launch advertising campaigns including better prices for Wine and Meat products for customers with no dependents as they spend more on these items than the average customer*
 
-The best performing channels are web and store purchases
+* The best performing channels are web and store purchases
 
 
 Suggested campaign: 
