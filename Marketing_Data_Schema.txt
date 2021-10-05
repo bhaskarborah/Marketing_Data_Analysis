@@ -9,7 +9,7 @@ Marital_Status string
 Income float
 Kid_Home int
 Teen_Home int
-Country string 
+Country string fk -< Country_Data.Country
 
 Country_Data
 -
