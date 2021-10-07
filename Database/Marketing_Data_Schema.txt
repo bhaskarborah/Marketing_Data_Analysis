@@ -2,14 +2,14 @@
 
 Demographic_Data
 -
-ID int pk
+ID int pk fk
 Year_Birth int INDEX
 Education string
 Marital_Status string
 Income float
 Kid_Home int
 Teen_Home int
-Country string 
+Country string fk -< Country_Data.Country
 
 Country_Data
 -
@@ -24,3 +24,15 @@ Marketing_Data_Amounts_Total
 ID int pk fk - Demographic_Data.ID
 Mnt_Sum float
 Purchases_Sum int
+
+Campaign_Country
+-
+Country string pk fk - Country_Data.Country
+Total_Customers int
+Cmp1_Response int
+Cmp2_Response int
+Cmp3_Response int
+Cmp4_Response int
+Cmp5_Response int
+Cmp6_Response int
+Cmps_Response int
