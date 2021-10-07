@@ -588,7 +588,7 @@ The Data Definition Language (DDL) statement to create the table is:
 ### ERD
 - Below is an ERD of our database
 
-![marketing_data_ERD](https://i.imgur.com/f2iFxqS.png)
+![marketing_data_ERD](https://i.imgur.com/DbOUL1W.png)
 
 ### Demographic Analysis of Campaign Responders
 - We divide customers into different groups of age: "<25", "25-35", "35-45", "45-55", "55-65", and ">65".
@@ -726,6 +726,11 @@ The pros and cons of K-means is as below:
 - It may sometimes cluster outliers
 - The value of k has to be chosen manually
 - It can be performed on numerical data only
+
+
+The target customer demographic dashboard:
+
+![Screen Shot 2021-10-06 at 10.12.39 PM](https://i.imgur.com/vcvfBex.png)
 
 
 
